@@ -3,10 +3,11 @@
 
 typedef struct  {
     char* data;
+    int x,y;
 } lib_foo;
 
-lib_foo* foo_create(char*);
+lib_foo* foo_new(char*, int, int);
 
-char* foo_repr(lib_foo*);
+char* foo_str(lib_foo*);
 
 #endif
